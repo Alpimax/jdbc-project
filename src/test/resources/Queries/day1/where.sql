@@ -19,3 +19,8 @@ where SALARY > 6000;
 select EMAIL
 from EMPLOYEES
 where SALARY < 6000;
+
+select *
+from EMPLOYEES
+where SALARY >= 3000
+  and SALARY <= 7000;
