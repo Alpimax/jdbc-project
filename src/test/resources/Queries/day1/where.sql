@@ -24,3 +24,8 @@ select *
 from EMPLOYEES
 where SALARY >= 3000
   and SALARY <= 7000;
+
+select *
+from EMPLOYEES
+where SALARY between 300 and 7000;
+
