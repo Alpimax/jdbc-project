@@ -1,6 +1,18 @@
-select * from EMPLOYEES;
+select *
+from EMPLOYEES;
+select PHONE_NUMBER, EMAIL
+from EMPLOYEES;
 
+select *
+from DEPARTMENTS;
 
+SELECT FIRST_NAME, LAST_NAME, SALARY
+FROM EMPLOYEES;
 
+select *
+from LOCATIONS;
 
+select COUNTRY_NAME, REGION_NAME
+from COUNTRIES,
+     REGIONS;
 
