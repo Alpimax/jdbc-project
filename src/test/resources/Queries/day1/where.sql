@@ -42,24 +42,29 @@ select *
 from EMPLOYEES
 where EMPLOYEE_ID in (121, 143, 156, 134);
 
-select COUNTRY_NAME from COUNTRIES
-where COUNTRY_ID NOT IN('US','IT');
+select COUNTRY_NAME
+from COUNTRIES
+where COUNTRY_ID NOT IN ('US', 'IT');
 
 -- IS NULL
 
 -- display all information from employees where department id is null
-select * from EMPLOYEES
+select *
+from EMPLOYEES
 where DEPARTMENT_ID is null;
 
 -- display all information from emplyees where manager id is null
-select * from EMPLOYEES
+select *
+from EMPLOYEES
 where MANAGER_ID is null;
 
 -- IS NOT NULL
 -- display all information from employees where department id is not null
-select * from EMPLOYEES
+select *
+from EMPLOYEES
 where DEPARTMENT_ID is not null;
 
 -- display all information from emplyees where manager id is not null
-select * from EMPLOYEES
-where MANAGER_ID is not null ;
+select *
+from EMPLOYEES
+where MANAGER_ID is not null;
