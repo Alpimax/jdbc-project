@@ -118,3 +118,5 @@ order by SALARY desc;
 select *
 from EMPLOYEES
 order by FIRST_NAME, LAST_NAME desc;
+
+
