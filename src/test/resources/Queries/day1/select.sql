@@ -16,3 +16,7 @@ select COUNTRY_NAME, REGION_NAME
 from COUNTRIES,
      REGIONS;
 
+select distinct COUNTRY_ID
+from LOCATIONS;
+
+
