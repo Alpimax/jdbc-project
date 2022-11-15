@@ -43,3 +43,29 @@ select DEPARTMENT_ID,sum(salary),count(*),max(salary),min(salary),round(avg(sala
 where DEPARTMENT_ID is not null   -- to remove null department id from result
 group by DEPARTMENT_ID
 order by max(salary) , min(salary) desc;
+
+-- display how many departments we have in each location
+select LOCATION_ID,count(*) from DEPARTMENTS
+group by LOCATION_ID;
+
+-- order results based on number of departments in desc
+select LOCATION_ID,count(*) from DEPARTMENTS
+group by LOCATION_ID
+order by count(*) desc;
+
+select LOCATION_ID,count(*) from DEPARTMENTS
+group by LOCATION_ID
+order by 2 desc;
+
+-- display how many countries we have in each regions
+select REGION_ID,count(*) from COUNTRIES
+group by  REGION_ID;
+
+-- order them based number of countries in desc
+select REGION_ID,count(*) from COUNTRIES
+group by  REGION_ID
+order by 2 desc;
+
+select REGION_ID,count(*) from COUNTRIES
+group by  REGION_ID
+order by count(*) desc;
