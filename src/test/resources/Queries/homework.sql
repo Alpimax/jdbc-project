@@ -15,3 +15,12 @@ where salary = (select min(SALARY)
                                 where salary > (select min(SALARY)
                                                 from EMPLOYEES)));
 
+select *
+from EMPLOYEES
+where salary > (select avg(SALARY) from EMPLOYEES);
+
+select *
+from EMPLOYEES
+where salary < (select avg(SALARY) from EMPLOYEES);
+
+
