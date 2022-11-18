@@ -19,3 +19,7 @@ CREATE TABLE OfficeBranch
     FOREIGN KEY (Mgr_id) references OfficeEmployee (Emp_id) on delete set null
 );
 
+ALTER table OFFICEEMPLOYEE
+add foreign key(BRANCH_ID)
+references OFFICEBRANCH(Branch_id)
+on delete  set null ;
