@@ -22,3 +22,5 @@ select first_name,count(*) from EMPLOYEES
 group by first_name
 having count(*)>1;
 
+select *
+from JOB_HISTORY ;
