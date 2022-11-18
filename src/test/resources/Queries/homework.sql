@@ -24,3 +24,5 @@ from EMPLOYEES
 where salary < (select avg(SALARY) from EMPLOYEES);
 
 
+
+
