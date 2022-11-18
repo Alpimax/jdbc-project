@@ -58,6 +58,9 @@ VALUES (10, '1795 Santiago', 86045262);
 INSERT INTO address (address_id, address, phone)
 VALUES (11, '900 Santiago', 16571220);
 
+select *
+from address;
+
 CREATE TABLE customer
 (
     customer_id Integer PRIMARY KEY,
@@ -78,3 +81,6 @@ INSERT INTO customer (customer_id, first_name, last_name, address_id)
 VALUES (5, 'Elizabeth', 'Brown', NULL);
 
 commit work;
+
+select *
+from customer;
