@@ -84,3 +84,16 @@ commit work;
 
 select *
 from customer;
+
+select *
+from EMPLOYEES;
+
+select COUNTRY_NAME, REGION_NAME
+from COUNTRIES C
+         INNER JOIN REGIONS R ON C.REGION_ID = R.REGION_ID;
+
+SELECT FIRST_NAME, JOB_TITLE
+FROM EMPLOYEES E
+         INNER JOIN JOBS J ON E.JOB_ID = J.JOB_ID;
+
+
