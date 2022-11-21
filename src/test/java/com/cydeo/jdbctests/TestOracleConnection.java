@@ -12,7 +12,24 @@ public class TestOracleConnection  {
 
         Statement statement = conn.createStatement();
         ResultSet rs = statement.executeQuery("select * from EMPLOYEES");
+        // it returns int
+        System.out.println(rs.getInt(1));  // 1
+        // it returns String
+        System.out.println(rs.getString(1));  // 1
+
+        // rs.getInt(columLabel)
+        System.out.println(rs.getInt("REGION_ID"));
+        System.out.println(rs.getString("REGION_ID"));
 
 
+
+
+
+
+
+
+        rs.close();
+        statement.close();
+        conn.close();
     }
 }
