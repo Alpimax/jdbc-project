@@ -12,6 +12,19 @@ public class TestOracleConnection  {
 
         Statement statement = conn.createStatement();
         ResultSet rs = statement.executeQuery("select * from EMPLOYEES");
+
+
+        System.out.println("------ FIRST ROW -------");
+
+
+        rs.next();
+
+        // pointer shows the first row
+
+        // how to get data
+
+        // rs.getInt(index)  --> it returns integer. Index start from 1 into SQL.It refers column position
+
         // it returns int
         System.out.println(rs.getInt(1));  // 1
         // it returns String
@@ -21,8 +34,17 @@ public class TestOracleConnection  {
         System.out.println(rs.getInt("REGION_ID"));
         System.out.println(rs.getString("REGION_ID"));
 
+        // get me Europe
+        System.out.println(rs.getString(2)); // Europe
+        System.out.println(rs.getString("REGION_NAME")); // Europe
 
+        System.out.println("------ SECOND ROW -------");
 
+        rs.next();
+        // 2 SECOND ROW    2 - Americas
+
+        System.out.println(rs.getString(1)+" - "+rs.getString(2));
+        System.out.println(rs.getString("REGION_ID")+" - "+rs.getString("REGION_NAME"));
 
 
 
