@@ -11,7 +11,7 @@ public class TestOracleConnection  {
         Connection conn = DriverManager.getConnection(dbUrl, dbUS, dbPass);
 
         Statement statement = conn.createStatement();
-        ResultSet rs = statement.executeQuery("select * from EMPLOYEES");
+        ResultSet rs = statement.executeQuery("select * from REGIONS");
 
 
         System.out.println("------ FIRST ROW -------");
@@ -29,10 +29,10 @@ public class TestOracleConnection  {
         System.out.println(rs.getInt(1));  // 1
         // it returns String
         System.out.println(rs.getString(1));  // 1
-
+        System.out.println("alpi");
         // rs.getInt(columLabel)
-        System.out.println(rs.getInt("REGION_ID"));
-        System.out.println(rs.getString("REGION_ID"));
+//        System.out.println(rs.getInt("REGION_ID"));
+//        System.out.println(rs.getString("REGION_ID"));
 
         // get me Europe
         System.out.println(rs.getString(2)); // Europe
