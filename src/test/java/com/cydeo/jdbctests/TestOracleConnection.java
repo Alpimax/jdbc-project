@@ -1,9 +1,6 @@
 package com.cydeo.jdbctests;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class TestOracleConnection  {
     public static void main(String[] args) throws SQLException {
@@ -14,7 +11,7 @@ public class TestOracleConnection  {
         Connection conn = DriverManager.getConnection(dbUrl, dbUS, dbPass);
 
         Statement statement = conn.createStatement();
-
+        ResultSet rs = statement.executeQuery("select * from EMPLOYEES");
 
 
     }
