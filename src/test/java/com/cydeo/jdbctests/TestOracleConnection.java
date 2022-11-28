@@ -17,6 +17,8 @@ public class TestOracleConnection {
                 -- MAC --> OPT + ENTER
                 -- WIN  --> ALT + ENTER
 
+
+
              */
 
         // DriverManager Class getCOnnection method will help to connect database
