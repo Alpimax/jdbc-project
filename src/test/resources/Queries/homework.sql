@@ -153,4 +153,6 @@ from DEPARTMENTS D
 select LAST_NAME from EMPLOYEES
 where LAST_NAME =  any ('a%', 'e%', 'i%', 'o%', 'u%');
 
-
+select * from EMPLOYEES;
+SELECT firstname FROM employees
+WHERE LENGHT( firstname )=6;

@@ -15,7 +15,7 @@ insert into developers values (3, 'Steven', 850000);
 insert into developers values (4, 'Maria', 120000);
 insert into testers values (1, 'Steven', 110000);
 insert into testers values(2, 'Adam', 105000);
-insert into testers values (3, 'Lex', 100000);
+insert into testers values (5, 'Alper', 100000);
 
 commit work;
 
@@ -24,5 +24,9 @@ select 'Developer',NAMES from DEVELOPERS
 union all
 select 'Tester' ,NAMES from TESTERS
 order by 1,2 ;
+
+
+
+
 
 

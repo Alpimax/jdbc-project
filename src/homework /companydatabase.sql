@@ -67,4 +67,4 @@ set Branch_id =1
 where Emp_id = 100;
 
 select *
-from OfficeEmployee;
+from OFFICEEMPLOYEE;
