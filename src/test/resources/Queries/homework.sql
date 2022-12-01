@@ -156,3 +156,7 @@ where LAST_NAME =  any ('a%', 'e%', 'i%', 'o%', 'u%');
 select * from EMPLOYEES;
 SELECT firstname FROM employees
 WHERE LENGHT( firstname )=6;
+
+sELECT * FROM EMPLOYEES
+WHERE SALARY='10000'
+FETCH FIRST 3 ROWS ONLY;
