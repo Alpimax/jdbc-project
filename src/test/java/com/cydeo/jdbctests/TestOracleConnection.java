@@ -11,26 +11,13 @@ public class TestOracleConnection {
         String dbUsername = "hr";
         String dbPassword = "hr";
 
+
+
             /*
             HOW TO INIT VARIABLES ?
 
                 -- MAC --> OPT + ENTER
                 -- WIN  --> ALT + ENTER
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
              */
 
         // DriverManager Class getCOnnection method will help to connect database
@@ -120,4 +107,6 @@ public class TestOracleConnection {
 
 
     }
+
+
 }
