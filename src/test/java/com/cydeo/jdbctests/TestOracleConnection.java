@@ -1,9 +1,12 @@
 package com.cydeo.jdbctests;
 
 
+import org.junit.jupiter.api.Test;
+
 import java.sql.*;
 
 public class TestOracleConnection {
+    String spartanBaseUrl ="http://44.211.223.224:8000";
 
     public static void main(String[] args) throws SQLException {
 
@@ -104,6 +107,12 @@ public class TestOracleConnection {
         rs.close();
         statement.close();
         conn.close();
+
+
+    }
+
+    @Test
+public void viewSpartansTest(){
 
 
     }
