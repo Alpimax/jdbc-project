@@ -1,12 +1,14 @@
 package com.cydeo.jdbctests;
 
 
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
 import org.junit.jupiter.api.Test;
 
 import java.sql.*;
 
 public class TestOracleConnection {
-    String spartanBaseUrl ="http://44.211.223.224:8000";
+    String spartanBaseUrl = "http://44.211.223.224:8000";
 
     public static void main(String[] args) throws SQLException {
 
@@ -112,10 +114,12 @@ public class TestOracleConnection {
     }
 
     @Test
-public void viewSpartansTest(){
-
+    public void viewSpartansTest() {
+        Response response = RestAssured.get(spartanBaseUrl + "/api/spartans");
 
     }
+
+
 
 
 }
